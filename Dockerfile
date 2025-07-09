@@ -5,7 +5,7 @@ RUN apk update && apk add nginx nodejs npm git --no-cache
 
 COPY default.conf /etc/nginx/http.d/default.conf  
   
-RUN git clone https://github.com/VANTERC/webssh.git  
+RUN git clone https://git.stormocean.uk/https://github.com/acloud613/webssh.git  
 WORKDIR /webssh/webssh_web  
 RUN npm install && npm run build && \  
     rm -rf /var/lib/nginx/html/* && \  
