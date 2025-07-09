@@ -2,7 +2,7 @@ module.exports = {
   // 数据库地址
   host:'host.docker.internal',
   // 数据库端口
-  port: 3306,
+  port: 3308,
   // 数据库名称
   database:'webssh',
   // 账号
