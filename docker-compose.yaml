@@ -13,7 +13,7 @@ services:
     networks:
       webssh_network:
     ports:
-      - "8080:80"
+      - "8081:80"
       - "7001:7001"
     command: 
       ["npm", "start"]
@@ -29,7 +29,7 @@ services:
       - --collation-server=utf8mb4_bin
       - --explicit_defaults_for_timestamp=true
     ports:
-      - "3306:3306"
+      - "3308:3306"
     platform: linux/x86_64
     environment:
       - MYSQL_ROOT_PASSWORD=123456
